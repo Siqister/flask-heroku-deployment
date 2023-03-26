@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Test ML deployment on Heroku</title>
+	</head>
+
+	<body>
+		<h1>MNIST digit prediction</h1>
+
+		<form action="/predict" method="post" enctype="multipart/form-data">
+			<input type="file" name="image" />
+			<input type="submit" name="Upload" />
+		</form>
+
+		<p id="prediction">{{ prediction_text }}</p>
+	</body>
+</html>
+
